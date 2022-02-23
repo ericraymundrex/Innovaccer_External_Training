@@ -1,0 +1,1 @@
+- Make a rule book about all the optimised queries.
