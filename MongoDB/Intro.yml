@@ -1,0 +1,9 @@
+Reational database:
+  - All the tables can use relationships to reduce retudency, so it is fast
+
+MongoDB:
+  - Here we use the JSON formate.
+  - Because the data is stored in the JSON there is no need for relationships
+  - This does not mean we can't make relationships, we can make relationships
+  - The Aim of the mongoDb is to create database as the document.
+  - This database type is called as the NoSQL
