@@ -1,5 +1,5 @@
 ### Innovaccer External Training :
-- All the Assignment from Mayur Patel is in the Repository
+- All the Assignment from Mayur Patil is in the Repository
 - This Repo have all the notes by the innovaccer in the External Training. 
 
 |  week | project  |
