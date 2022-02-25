@@ -1,0 +1,1 @@
+<img src="https://embed.creately.com/G2c1f3UGLoe?type=svg">
