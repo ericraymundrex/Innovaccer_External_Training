@@ -1,3 +1,5 @@
+Link of all the SQL files: [Link](https://github.com/ericraymundrex/Innovaccer_External_Training/tree/main/SQL_and_mongoDB/SQL%20Assignment/src)
+
 ### UML of the tables | Ecommerce web-site
 - This is after executing the first file.
 <div align="center">
