@@ -1,5 +1,6 @@
 ### Innovaccer_External_Training :
--This Repo have all the notes by the innovaccer in the External Training. 
+- All the Assignment from Mayur Patel is in the Repository
+- This Repo have all the notes by the innovaccer in the External Training. 
 - Week 1 : 
   - [Project with Shell script](https://github.com/ericraymundrex/Password_Manager) 
   - Developed the password manager.
