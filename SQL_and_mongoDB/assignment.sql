@@ -60,13 +60,20 @@ INSERT INTO CUSTOMER(NAME,EMAIL,PURCHASE_ID,ADDRESS) VALUES ('ERIC','eric@gmail.
 ('REX','rex@gmail.com',9,'{"CITY":"CALIFONIA","COUNTRY":"USA"}');
 
 -- --------------------------------------------------------------------------------------
+-- TRIGGER
 CREATE OR REPLACE FUNCTION UPDATE_STOCK() RETURNS TRIGGER AS
 $BODY$
 BEGIN
-			IF NEW.RETURN <> false
-				UPDATE ITEM SET STOCK=OLD.STOCK+1
-			END IF
+			IF NEW.RETURNED <> false THEN
+				UPDATE ITEM SET STOCK=STOCK+1 WHERE ID=OLD.ITEM;
+			END IF;
            RETURN new;
 END;
 $BODY$
-language plpgsql;
+language plpgsql
+
+CREATE TRIGGER updating_the_stocks
+BEFORE UPDATE
+ON PURCHASE
+FOR EACH ROW
+	EXECUTE PROCEDURE UPDATE_STOCK();
