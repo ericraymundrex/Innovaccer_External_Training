@@ -1,0 +1,71 @@
+Reational database:
+  - All the tables can use relationships to reduce retudency, so it is fast
+
+MongoDB:
+  - Here we use the JSON formate.
+  - Because the data is stored in the JSON there is no need for relationships
+  - This does not mean we can't make relationships, we can make relationships
+  - The Aim of the mongoDb is to create database as the document.
+  - This database type is called as the NoSQL
+
+Installation:
+  - https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+  - sudo systemctl start mongod   -> Start the mongoDB.
+  - sudo systemctl status mongod  -> Check it is running.
+  - sudo systemctl stop mongod    -> Stop the mmongoDB.
+  
+Robo 3T:
+  - mongo
+  - By default there is no password in the mongoDB. just typing mongo this will go to the mongoDB instance.
+  - mongoDB compass is the GUI tool for the mongoDB.
+  - Instead of mongoDB, we can use the Robo 3T
+  
+  Establish the connection:
+        - Just create the connection and click connect
+  
+IMPORTANT TO NOTE:
+  - If have the empty database then this is not visible in the user interface.
+  - This is for the Robo 3T
+  - Exmpty database will not be :
+
+Commands:
+  - show databases;:
+    - This will show the databases.
+  - show collections;:
+    - This will show all the collections.
+
+  - --------------------------------------------------------
+  
+  - INSERT COMMAND:
+  - db.Employee.insertOne();:
+    - code:
+          db.Employee.insertOne({
+              first_name:"Eric",
+              last_name:"Rex",
+              age:21,
+              isMarried:false
+          });
+    - This will insert into the Employee collection.
+  - db.Employee.insertMany();:
+    - code:
+          db.Employee.insertOne(
+              [
+            {
+              first_name:"Eric",
+              last_name:"Rex",
+              age:21,
+              isMarried:false
+          },{
+              first_name:"Mary",
+              last_name:"Meji",
+              age:45,
+              isMarried:true           
+          }
+            ]
+          );
+      - When we have the multiple records; use Array.
+
+  - --------------------------------------------------------
+  
+  - db.getCollection('Employee').find({}):
+    To fetch the data from the Collection.
