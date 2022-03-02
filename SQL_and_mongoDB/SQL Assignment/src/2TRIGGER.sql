@@ -11,7 +11,7 @@ BEGIN
            RETURN new;
 END;
 $BODY$
-language plpgsql
+language plpgsql;
 
 CREATE TRIGGER updating_the_stocks
 BEFORE UPDATE
@@ -32,7 +32,7 @@ BEGIN
            RETURN new;
 END;
 $BODY$
-language plpgsql
+language plpgsql;
 
 CREATE TRIGGER updating_the_stocks_onsale
 BEFORE INSERT
