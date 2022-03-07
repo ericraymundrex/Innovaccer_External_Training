@@ -1,37 +1,57 @@
-db.course.insertMany(
+// Inserting all the Courses
+
+db.Courses.insertMany(
     [
         {
-            name:"Machine Learning",
-            description:"Use for datascience"
-        },
-        {
-            name:"Elastic search",
-            description:"Use for datawarehouse"
-        },
-        {
-            name:"Python",
-            description:"Your for everything"
-        }
+            Course_Name:"Machine Learning",
+            Author: "Ms. Samantha"
+         },
+         {
+           Course_Name:"Artificial Inteligence",
+            Author: "Ms. Ramanujar"
+          },
+                   {
+           Course_Name:"Docker",
+            Author: "Ms. Tony stark"
+          }
     ]
     )
-    db.course.find()
-        
-    db.students.insertMany(
-        [
+          
+
+// To see all the Inserted Value
+db.Courses.find()
+
+// To insert all the Students
+db.Students.insertMany(
+ [
+    {
+        Name: "Eric",
+        Email: "eric@gmail.com",
+        Couser_id: [ObjectId("62259e1d2b99857a8a7e6415"),ObjectId("62259e1d2b99857a8a7e6416"),ObjectId("62259e1d2b99857a8a7e6417")]
+    }        
+  ]         
+ )
+ 
+ db.Students.insertMany(
+ [
+    {
+        Name: "Raymund",
+        Email: "raymund@gmail.com",
+        Couser_id: [ObjectId("62259e1d2b99857a8a7e6415"),ObjectId("62259e1d2b99857a8a7e6417")]
+    },
         {
-                name: "Eric",
-                course: ["62183fbbff8ccb89f134e8fb","62183fbbff8ccb89f134e8fc","62183fbbff8ccb89f134e8fd"]
-        },
-         {
-                name: "Mary",
-                course: ["62183fbbff8ccb89f134e8fb","62183fbbff8ccb89f134e8fc"]
-        },
-         {
-                name: "Rex",
-                course: ["62183fbbff8ccb89f134e8fb","62183fbbff8ccb89f134e8fd"]
-        }
-        ]
-    )
-        
-    db.students.find()
-        
+        Name: "Rex",
+        Email: "rex@gmail.com",
+        Couser_id: [ObjectId("62259e1d2b99857a8a7e6415"),ObjectId("62259e1d2b99857a8a7e6416")]
+    },
+            {
+        Name: "Mary",
+        Email: "mary@gmail.com",
+        Couser_id: [ObjectId("62259e1d2b99857a8a7e6416")]
+            }
+  ]         
+ )
+// To see all the Students.
+            
+ db.Students.find()
+            
